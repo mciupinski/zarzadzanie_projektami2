@@ -1,6 +1,6 @@
 public class Calc {
 	
-	public static Integer calculate(Integer a, Integer b) {
-		return a * b;
+	public static Double calculate(State state, Double price) {
+		return price / (1 + (state.getTaxValue() / 100));
 	}
 }
