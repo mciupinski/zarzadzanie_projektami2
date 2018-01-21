@@ -15,9 +15,9 @@ public class TaxMain {
 
         JFrame window = new JFrame();
         JTextField textField = new JTextField();
-        JLabel valueLabel = new JLabel("Kwota brutto:");
-        JLabel number2Label = new JLabel("Grupa towarów:");
-        JLabel resultLabel = new JLabel("Wynik:");
+        JLabel valueLabel = new JLabel("Gross price:");
+        JLabel number2Label = new JLabel("Group of goods:");
+        JLabel resultLabel = new JLabel("Results:");
 
         final JTextField resultTextField = new JTextField("");
 
