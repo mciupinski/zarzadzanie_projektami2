@@ -15,7 +15,7 @@ public class TaxMain {
 
         JFrame window = new JFrame();
         JTextField textField = new JTextField();
-        JLabel userInputValue = new JLabel("Kwota brutto:");
+        JLabel valueLabel = new JLabel("Kwota brutto:");
         JLabel number2Label = new JLabel("Grupa towarów:");
         JLabel resultLabel = new JLabel("Wynik:");
 
@@ -24,7 +24,6 @@ public class TaxMain {
         JButton okButton = new JButton("OK");
 
         JComboBox number1ComboBox = new JComboBox(comboBox1NumbersArray);
-        JComboBox number2ComboBox = new JComboBox();
 
         resultTextField.setEditable(false);
 
@@ -40,12 +39,10 @@ public class TaxMain {
         window.setMinimumSize(new Dimension(500, 300));
         window.setLayout(new GridLayout(0, 1));
 
-        window.add(userInputValue);
+        window.add(valueLabel);
         window.add(textField);
-        window.add(userInputValue);
-        window.add(number1ComboBox);
         window.add(number2Label);
-        window.add(number2ComboBox);
+        window.add(number1ComboBox);
         window.add(okButton);
         window.add(resultLabel);
         window.add(resultTextField);
